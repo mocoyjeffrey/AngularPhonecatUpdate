@@ -1,0 +1,202 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <!--Sidebar content-->
+  </div>
+  <div class="row">
+  </br>
+    </br>
+    <div class="col-md-12">
+      
+        <div class="panel panel-primary">
+          <div class="panel-heading">{{Createtitle}}</div>
+            <div class="panel-body">
+              <form ng-submit="submit()" ng-controller="CreateCtrl">
+                <table class="table table-striped table-bordered">
+    
+                    <tbody>
+                        <tr>
+                          <td class="ng-binding"><b>Phone Code:</b></td>
+                          <td class="ng-binding">
+                            <input type="text" class="form-control" name="pid"  ng-model="phone.id" placeholder="Use unique code" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Name:</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="pname" ng-model="phone.name" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Description:</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="pdescription" ng-model="phone.description" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Age:</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="pname" ng-model="phone.age" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Carrier:</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="pname" ng-model="phone.carrier" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Primary Image:</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="pname" ng-model="phone.imageUrl" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Snippet:</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="pname" ng-model="phone.snippet" required></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="ng-binding text-center" colspan="2"><b>Battery Detail</b></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding " ><b>Type:</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="btype" ng-model="phone.type" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Talk Time:</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="btalkTime" ng-model="phone.talkTime" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Standby time (max):</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="bstandbyTime" ng-model="phone.standbyTime" required></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="ng-binding text-center" colspan="2"><b>Storage and Memory</b></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>RAM</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="sram" ng-model="phone.ram" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Internal Storage</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="sflash" ng-model="phone.flash" required></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="ng-binding text-center" colspan="2"><b>Connectivity</b></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Network Support</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="ctcell" ng-model="phone.cell" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>WiFi</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="ctwifi" ng-model="phone.wifi" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Bluetooth</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="ctbluetooth" ng-model="phone.bluetooth" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Infrared</b></td>
+                          
+                          <td class="ng-binding">
+
+                            <input type="text" class="form-control" name="ctinfrared" ng-model="phone.infrared" placeholder="true/false" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>GPS</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="ctgps" ng-model="phone.gps" placeholder="true/false" required></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="ng-binding text-center" colspan="2"><b>Android</b></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>OS Version</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="aos" ng-model="phone.os" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>UI</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="aui" ng-model="phone.ui" required></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="ng-binding text-center" colspan="2"><b>Size and Weight</b></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Dimensions</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="swdimensions" ng-model="phone.dimensions" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Weight</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="swweight" ng-model="phone.weight" required></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="ng-binding text-center" colspan="2"><b>Display</b></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Screen size</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="dscreenSize" ng-model="phone.screenSize" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Screen resolution</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="dscreenResolution" ng-model="phone.screenResolution" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Touch screen</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="dtouchScreen" ng-model="phone.touchScreen" placeholder="true/false" required></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="ng-binding text-center" colspan="2"><b>Hardware</b></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>CPU</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="hcpu" ng-model="phone.cpu" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>USB</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="husb" ng-model="phone.usb" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Audio / headphone jack</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="haudioJack" ng-model="phone.audioJack" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>FM Radio</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="hfmRadio" ng-model="phone.fmRadio" placeholder="true/false" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Accelerometer</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="haccelerometer" ng-model="phone.accelerometer" placeholder="true/false" required></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="ng-binding text-center" colspan="2"><b>Camera</b></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Primary</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="cprimary" ng-model="phone.primary" required></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Features</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="cfeatures" ng-model="phone.features" required></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="ng-binding text-center" colspan="2"><b>Additional Features</b></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Additional Features</b></td>
+                          <td class="ng-binding"><input type="text" class="form-control" name="padditionalFeatures" ng-model="phone.additionalFeatures" required></td>
+                        </tr>
+                        
+                        <tr class="info">
+                          <td class="ng-binding text-center" colspan="2"><b>Images</b></td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding"><b>Image URL</b></td>
+                          <td class="ng-binding">
+                            <textarea rows="4" cols="50" ng-model="vimage" class="form-control">use comma-separated values for the image location
+                            </textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ng-binding text-center" colspan="2"></br><input class='btn btn-primary' type="submit" id="update" value="Create New Phone" /></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                  </form>
+            </div>
+        </div>   
+
+    </div>
+  </div>
+</div>
+
+
